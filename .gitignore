@@ -1,0 +1,25 @@
+# Node.js
+node_modules/
+dist/
+.env
+*.log
+
+# Tailwind
+practice_maximaster/shop-site/public/styles/tailwind.css
+
+# PHP/SQL
+practise_php_sql/vendor/
+practise_php_sql/*.sqlite
+practise_php_sql/*.sql
+practise_php_sql/*.db
+
+# Docker
+*.pid
+
+# System
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
