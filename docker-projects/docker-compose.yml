@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  html-site:
+    build:
+      context: ./practice_maximaster
+      dockerfile: Dockerfile
+    container_name: html-site
+    ports:
+      - "3000:80"
+
+  react-app:
+    build:
+      context: ./react-ts-practice
+      dockerfile: Dockerfile
+    container_name: react-app
+    ports:
+      - "3001:5173"
+
+  php-app:
+    build:
+      context: ./practise_php_sql
+      dockerfile: Dockerfile
+    container_name: php-app
+    ports:
+      - "3002:80"
