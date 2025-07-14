@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop.co</title>
+    <link href="./styles/tailwind.css" rel="stylesheet" />
+    <style>
+      @font-face {
+        font-family: 'Integral CF';
+        src: url('./fonts/integralcf-bold.otf') format('opentype');
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'Satoshi';
+        src: url('./fonts/Satoshi-Regular.woff2') format('woff2');
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
+  </head>
+
+  <body class="bg-[#f0f0f0] text-[#121212] font-sans">
+
+    <!-- Top bar -->
+    <div class="bg-black text-white text-sm text-center py-2 px-4">
+      Sign up and get 20% off to your first order. <a href="#" class="underline">Sign Up Now</a>
+    </div>
+
+    <!-- Navbar -->
+    <header class="bg-white">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-10">
+          <h1 class="text-3xl font-[700] font-[Integral CF]">SHOP.CO</h1>
+          <nav class="hidden md:flex gap-6 text-sm">
+            <a href="#" class="hover:text-gray-500">Shop</a>
+            <a href="#" class="hover:text-gray-500">On Sale</a>
+            <a href="#" class="hover:text-gray-500">New Arrivals</a>
+            <a href="#" class="hover:text-gray-500">Brands</a>
+          </nav>
+        </div>
+        <div class="relative w-[280px] hidden lg:block">
+          <input
+            type="text"
+            placeholder="Search for products..."
+            class="w-full py-2 pl-10 pr-4 rounded-full border border-gray-300 text-sm focus:outline-none"
+          />
+          <img src="./images/search.svg" class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4" />
+        </div>
+        <div class="flex items-center gap-4">
+          <img src="./images/cart.svg" class="w-5 h-5" />
+          <img src="./images/user.svg" class="w-5 h-5" />
+        </div>
+      </div>
+    </header>
+
+<!-- Hero Section -->
+<section class="bg-[#f0f0f0] relative overflow-hidden px-6 py-20">
+  <!-- Фоновая картинка -->
+  <img src="./images/hero.png" class="absolute bottom-0 right-0 w-[700px] lg:w-[900px] xl:w-[1100px] max-w-none z-0 pointer-events-none" alt="Hero Image" />
+
+  <!-- Контент поверх -->
+  <div class="max-w-7xl mx-auto relative z-10 flex flex-col items-start lg:items-start lg:flex-row lg:justify-between gap-10">
+    
+    <!-- Текст -->
+    <div class="lg:w-1/2">
+      <h2 class="text-[56px] md:text-[64px] leading-tight font-[700] font-[Integral CF] mb-6">
+        FIND CLOTHES<br />THAT MATCHES<br />YOUR STYLE
+      </h2>
+      <p class="text-[#6d6d6d] text-base leading-relaxed mb-8">
+        Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.
+      </p>
+      <button class="bg-black text-white px-6 py-3 rounded-full text-base font-satoshi hover:bg-[#333] transition">
+        Shop Now
+      </button>
+
+      <!-- Статистика -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-1">
+        <div>
+          <p class="text-xl md:text-3xl font-bold font-satoshi">200+</p>
+          <p class="text-sm text-[#6d6d6d]">International Brands</p>
+        </div>
+        <div>
+          <p class="text-xl md:text-3xl font-bold font-satoshi">2,000+</p>
+          <p class="text-sm text-[#6d6d6d]">High-Quality Products</p>
+        </div>
+        <div>
+          <p class="text-x1 md:text-3xl font-bold font-satoshi">30,000+</p>
+          <p class="text-sm text-[#6d6d6d]">Happy Customers</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Звёздочки -->
+  <img src="./images/star.svg" class="absolute -top-6 -left-6 w-8 h-8 md:w-10 md:h-10 z-10" />
+  <img src="./images/star.svg" class="absolute bottom-0 right-0 w-8 h-8 md:w-10 md:h-10 z-10" />
+</section>
+
+
+    <!-- Brands -->
+    <section class="bg-black py-6">
+      <div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-between items-center gap-6 text-white">
+        <img src="./images/versace.svg" class="h-6" />
+        <img src="./images/zara.svg" class="h-6" />
+        <img src="./images/gucci.svg" class="h-6" />
+        <img src="./images/prada.svg" class="h-6" />
+        <img src="./images/calvin.svg" class="h-6" />
+      </div>
+    </section>
+
+   <!-- New Arrivals -->
+<section class="bg-[#f0f0f0] py-16">
+  <h2 class="text-center text-[32px] md:text-[40px] font-integral font-bold mb-12">NEW ARRIVALS</h2>
+  <div class="flex flex-wrap justify-center gap-6 px-4">
+
+    <!-- 1 -->
+    <div class="bg-white rounded-xl p-4 w-[250px]">
+      <img src="/images/products/product1.png" alt="" class="w-full h-auto mb-4" />
+      <h3 class="text-sm font-medium font-satoshi mb-1">T-shirt with Tape Details</h3>
+      <div class="flex items-center gap-1 mb-1">
+        <img src="/images/star-full.png" class="w-4 h-4" />
+        <img src="/images/star-full.png" class="w-4 h-4" />
+        <img src="/images/star-full.png" class="w-4 h-4" />
+        <img src="/images/star-full.png" class="w-4 h-4" />
+        <img src="/images/star-half.png" class="w-4 h-4" />
+        <span class="text-sm text-[#FFC633] font-satoshi ml-1">4.5/5</span>
+      </div>
+      <p class="text-lg font-bold font-satoshi">$120</p>
+    </div>
+
+    <!-- 2 -->
+    <div class="bg-white rounded-xl p-4 w-[250px]">
+      <img src="/images/products/product2.png" alt="" class="w-full h-auto mb-4" />
+      <h3 class="text-sm font-medium font-satoshi mb-1">Skinny Fit Jeans</h3>
+      <div class="flex items-center gap-1 mb-1">
+        <img src="/images/star-full.png" class="w-4 h-4" />
+        <img src="/images/star-full.png" class="w-4 h-4" />
+        <img src="/images/star-full.png" class="w-4 h-4" />
+        <img src="/images/star-half.png" class="w-4 h-4" />
+        <span class="text-sm text-[#FFC633] font-satoshi ml-1">3.5/5</span>
+      </div>
+      <p class="text-lg font-bold font-satoshi">$240 <span class="line-through text-gray-400 ml-1 text-base">$260</span>
+        <span class="text-xs bg-[#FF3333]/10 text-[#FF3333] px-2 py-[2px] rounded-full ml-1">-20%</span>
+      </p>
+    </div>
+
+    <!-- 3 -->
+    <div class="bg-white rounded-xl p-4 w-[250px]">
+      <img src="/images/products/product3.png" alt="" class="w-full h-auto mb-4" />
+      <h3 class="text-sm font-medium font-satoshi mb-1">Checkered Shirt</h3>
+      <div class="flex items-center gap-1 mb-1">
+        <img src="/images/star-full.png" class="w-4 h-4" />
+        <img src="/images/star-full.png" class="w-4 h-4" />
+        <img src="/images/star-full.png" class="w-4 h-4" />
+        <img src="/images/star-full.png" class="w-4 h-4" />
+        <img src="/images/star-half.png" class="w-4 h-4" />
+        <span class="text-sm text-[#FFC633] font-satoshi ml-1">4.5/5</span>
+      </div>
+      <p class="text-lg font-bold font-satoshi">$180</p>
+    </div>
+
+    <!-- 4 -->
+    <div class="bg-white rounded-xl p-4 w-[250px]">
+      <img src="/images/products/product4.png" alt="" class="w-full h-auto mb-4" />
+      <h3 class="text-sm font-medium font-satoshi mb-1">Sleeve Striped T-shirt</h3>
+      <div class="flex items-center gap-1 mb-1">
+        <img src="/images/star-full.png" class="w-4 h-4" />
+        <img src="/images/star-full.png" class="w-4 h-4" />
+        <img src="/images/star-full.png" class="w-4 h-4" />
+        <img src="/images/star-full.png" class="w-4 h-4" />
+        <img src="/images/star-half.png" class="w-4 h-4" />
+        <span class="text-sm text-[#FFC633] font-satoshi ml-1">4.5/5</span>
+      </div>
+      <p class="text-lg font-bold font-satoshi">$130 <span class="line-through text-gray-400 ml-1 text-base">$160</span>
+        <span class="text-xs bg-[#FF3333]/10 text-[#FF3333] px-2 py-[2px] rounded-full ml-1">-30%</span>
+      </p>
+    </div>
+
+  </div>
+  <div class="text-center mt-10">
+    <button class="px-6 py-2 border border-black rounded-full font-satoshi hover:bg-black hover:text-white transition">
+      View All
+    </button>
+  </div>
+</section>
+
+<!-- Top Selling -->
+<section class="bg-[#f0f0f0] py-16">
+  <h2 class="text-center text-[32px] md:text-[40px] font-integral font-bold mb-12">TOP SELLING</h2>
+  <div class="flex flex-wrap justify-center gap-6 px-4">
+
+    <!-- 5 -->
+    <div class="bg-white rounded-xl p-4 w-[250px]">
+      <img src="/images/products/product5.png" alt="" class="w-full h-auto mb-4" />
+      <h3 class="text-sm font-medium font-satoshi mb-1">Vertical Striped Shirt</h3>
+      <div class="flex items-center gap-1 mb-1">
+        <img src="/images/star-full.png" class="w-4 h-4" />
+        <img src="/images/star-full.png" class="w-4 h-4" />
+        <img src="/images/star-full.png" class="w-4 h-4" />
+        <img src="/images/star-full.png" class="w-4 h-4" />
+        <img src="/images/star-full.png" class="w-4 h-4" />
+        <span class="text-sm text-[#FFC633] font-satoshi ml-1">5.0/5</span>
+      </div>
+      <p class="text-lg font-bold font-satoshi">$212 <span class="line-through text-gray-400 ml-1 text-base">$232</span>
+        <span class="text-xs bg-[#FF3333]/10 text-[#FF3333] px-2 py-[2px] rounded-full ml-1">-20%</span>
+      </p>
+    </div>
+
+    <!-- 6 -->
+    <div class="bg-white rounded-xl p-4 w-[250px]">
+      <img src="/images/products/product6.png" alt="" class="w-full h-auto mb-4" />
+      <h3 class="text-sm font-medium font-satoshi mb-1">Courage Graphic T-shirt</h3>
+      <div class="flex items-center gap-1 mb-1">
+        <img src="/images/star-full.png" class="w-4 h-4" />
+        <img src="/images/star-full.png" class="w-4 h-4" />
+        <img src="/images/star-full.png" class="w-4 h-4" />
+        <img src="/images/star-full.png" class="w-4 h-4" />
+        <span class="text-sm text-[#FFC633] font-satoshi ml-1">4.0/5</span>
+      </div>
+      <p class="text-lg font-bold font-satoshi">$145</p>
+    </div>
+
+    <!-- 7 -->
+    <div class="bg-white rounded-xl p-4 w-[250px]">
+      <img src="/images/products/product7.png" alt="" class="w-full h-auto mb-4" />
+      <h3 class="text-sm font-medium font-satoshi mb-1">Loose Fit Bermuda Shorts</h3>
+      <div class="flex items-center gap-1 mb-1">
+        <img src="/images/star-full.png" class="w-4 h-4" />
+        <img src="/images/star-full.png" class="w-4 h-4" />
+        <img src="/images/star-full.png" class="w-4 h-4" />
+        <span class="text-sm text-[#FFC633] font-satoshi ml-1">3.0/5</span>
+      </div>
+      <p class="text-lg font-bold font-satoshi">$80</p>
+    </div>
+
+    <!-- 8 -->
+    <div class="bg-white rounded-xl p-4 w-[250px]">
+      <img src="/images/products/product8.png" alt="" class="w-full h-auto mb-4" />
+      <h3 class="text-sm font-medium font-satoshi mb-1">Faded Skinny Jeans</h3>
+      <div class="flex items-center gap-1 mb-1">
+        <img src="/images/star-full.png" class="w-4 h-4" />
+        <img src="/images/star-full.png" class="w-4 h-4" />
+        <img src="/images/star-full.png" class="w-4 h-4" />
+        <img src="/images/star-full.png" class="w-4 h-4" />
+        <img src="/images/star-half.png" class="w-4 h-4" />
+        <span class="text-sm text-[#FFC633] font-satoshi ml-1">4.5/5</span>
+      </div>
+      <p class="text-lg font-bold font-satoshi">$210</p>
+    </div>
+
+  </div>
+  <div class="text-center mt-10">
+    <button class="px-6 py-2 border border-black rounded-full font-satoshi hover:bg-black hover:text-white transition">
+      View All
+    </button>
+  </div>
+</section>
+
+<!-- Browse by Dress Style -->
+<section class="bg-[#f0f0f0] py-16">
+  <div class="max-w-[1280px] mx-auto px-6 bg-white rounded-3xl py-12">
+    <h2 class="text-center text-3xl md:text-4xl font-bold mb-10 tracking-tight font-integral">Browse by Dress Style</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 px-4 md:px-0">
+      <!-- Casual -->
+      <div class="bg-[#f6f6f6] rounded-xl overflow-hidden text-center">
+        <img src="/images/style-casual.png" alt="Casual" class="w-full h-48 object-cover object-top">
+        <p class="font-satoshi font-medium text-lg mt-4 mb-4">Casual</p>
+      </div>
+      <!-- Formal -->
+      <div class="bg-[#f6f6f6] rounded-xl overflow-hidden text-center">
+        <img src="/images/style-formal.png" alt="Formal" class="w-full h-48 object-cover object-top">
+        <p class="font-satoshi font-medium text-lg mt-4 mb-4">Formal</p>
+      </div>
+      <!-- Party -->
+      <div class="bg-[#f6f6f6] rounded-xl overflow-hidden text-center">
+        <img src="/images/style-party.png" alt="Party" class="w-full h-48 object-cover object-top">
+        <p class="font-satoshi font-medium text-lg mt-4 mb-4">Party</p>
+      </div>
+      <!-- Gym -->
+      <div class="bg-[#f6f6f6] rounded-xl overflow-hidden text-center">
+        <img src="/images/style-gym.png" alt="Gym" class="w-full h-48 object-cover object-top">
+        <p class="font-satoshi font-medium text-lg mt-4 mb-4">Gym</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Happy Customers -->
+<section class="py-20 px-4">
+  <div class="max-w-[1240px] mx-auto relative">
+    <h2 class="text-[32px] font-bold font-integral mb-10">
+      OUR HAPPY CUSTOMERS
+    </h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-xl shadow-sm p-6">
+        <div class="flex items-center gap-1 mb-2">
+          <img src="/images/star-full.png" alt="" class="w-4 h-4" />
+          <img src="/images/star-full.png" alt="" class="w-4 h-4" />
+          <img src="/images/star-full.png" alt="" class="w-4 h-4" />
+          <img src="/images/star-full.png" alt="" class="w-4 h-4" />
+          <img src="/images/star-full.png" alt="" class="w-4 h-4" />
+        </div>
+        <div class="flex items-center gap-2 mb-2">
+          <p class="font-bold">Sarah M.</p>
+          <img src="/images/check-circle.png" alt="" class="w-4 h-4" />
+        </div>
+        <p class="text-[#6c6c6c] text-sm">
+          "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+        </p>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-white rounded-xl shadow-sm p-6">
+        <div class="flex items-center gap-1 mb-2">
+          <img src="/images/star-full.png" alt="" class="w-4 h-4" />
+          <img src="/images/star-full.png" alt="" class="w-4 h-4" />
+          <img src="/images/star-full.png" alt="" class="w-4 h-4" />
+          <img src="/images/star-full.png" alt="" class="w-4 h-4" />
+          <img src="/images/star.png" alt="" class="w-4 h-4" />
+        </div>
+        <div class="flex items-center gap-2 mb-2">
+          <p class="font-bold">Alex K.</p>
+          <img src="/images/check-circle.png" alt="" class="w-4 h-4" />
+        </div>
+        <p class="text-[#6c6c6c] text-sm">
+          "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable..."
+        </p>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-white rounded-xl shadow-sm p-6">
+        <div class="flex items-center gap-1 mb-2">
+          <img src="/images/star-full.png" alt="" class="w-4 h-4" />
+          <img src="/images/star-full.png" alt="" class="w-4 h-4" />
+          <img src="/images/star-full.png" alt="" class="w-4 h-4" />
+          <img src="/images/star-full.png" alt="" class="w-4 h-4" />
+          <img src="/images/star-full.png" alt="" class="w-4 h-4" />
+        </div>
+        <div class="flex items-center gap-2 mb-2">
+          <p class="font-bold">James L.</p>
+          <img src="/images/check-circle.png" alt="" class="w-4 h-4" />
+        </div>
+        <p class="text-[#6c6c6c] text-sm">
+          "The selection of clothes is not only diverse but also on-point with the latest trends. I'm thrilled to have stumbled upon Shop.co."
+        </p>
+      </div>
+    </div>
+    <!-- Arrows -->
+    <div class="absolute right-0 top-0 flex gap-2">
+      <button>
+        <img src="/images/arrow-left.svg" alt="Previous" class="w-9 h-9" />
+      </button>
+      <button>
+        <img src="/images/arrow-right.svg" alt="Next" class="w-9 h-9" />
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Subscribe section -->
+<section class="bg-black text-white py-12 px-6 lg:px-24">
+  <div class="max-w-7xl mx-auto text-center">
+    <h2 class="text-3xl lg:text-4xl font-bold leading-tight">
+      STAY UPTO DATE ABOUT<br />
+      OUR LATEST OFFERS
+    </h2>
+
+    <div class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
+      <div class="relative w-full max-w-md">
+        <span class="absolute left-4 top-1/2 -translate-y-1/2">
+          <img src="/images/mail.svg" alt="Email icon" class="w-5 h-5" />
+        </span>
+        <input
+          type="email"
+          placeholder="Enter your email address"
+          class="w-full pl-12 pr-4 py-3 rounded-full text-black placeholder-gray-500 outline-none"
+        />
+      </div>
+
+      <button class="bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-200 transition">
+        Subscribe to Newsletter
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#F0F0F0] text-[#555] py-12 px-6 lg:px-24">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-10 text-sm">
+
+    <!-- Shop Description -->
+    <div>
+      <h3 class="text-2xl font-bold text-black mb-4">SHOP.CO</h3>
+      <p class="mb-4">
+        We have clothes that suits your style and<br />
+        which you're proud to wear. From<br />
+        women to men.
+      </p>
+      <div class="flex gap-4 mt-4">
+        <img src="/images/twitter.svg" alt="Twitter" class="w-5 h-5" />
+        <img src="/images/facebook.svg" alt="Facebook" class="w-5 h-5" />
+        <img src="/images/instagram.svg" alt="Instagram" class="w-5 h-5" />
+        <img src="/images/github.svg" alt="GitHub" class="w-5 h-5" />
+      </div>
+    </div>
+
+    <!-- Footer links -->
+    <div>
+      <h4 class="text-black font-semibold mb-4 tracking-widest">COMPANY</h4>
+      <ul class="space-y-2">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Works</a></li>
+        <li><a href="#">Career</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="text-black font-semibold mb-4 tracking-widest">HELP</h4>
+      <ul class="space-y-2">
+        <li><a href="#">Customer Support</a></li>
+        <li><a href="#">Delivery Details</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="text-black font-semibold mb-4 tracking-widest">FAQ</h4>
+      <ul class="space-y-2">
+        <li><a href="#">Account</a></li>
+        <li><a href="#">Manage Deliveries</a></li>
+        <li><a href="#">Orders</a></li>
+        <li><a href="#">Payments</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="text-black font-semibold mb-4 tracking-widest">RESOURCES</h4>
+      <ul class="space-y-2">
+        <li><a href="#">Free eBooks</a></li>
+        <li><a href="#">Development Tutorial</a></li>
+        <li><a href="#">How to - Blog</a></li>
+        <li><a href="#">Youtube Playlist</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom row -->
+  <div class="mt-12 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-4 gap-6 text-xs text-gray-600 border-t pt-6">
+    <p>Shop.co © 2000-2023, All Rights Reserved</p>
+    <div class="flex gap-4">
+      <img src="/images/visa.svg" alt="Visa" class="h-6" />
+      <img src="/images/mastercard.svg" alt="Mastercard" class="h-6" />
+      <img src="/images/paypal.svg" alt="PayPal" class="h-6" />
+      <img src="/images/applepay.svg" alt="Apple Pay" class="h-6" />
+      <img src="/images/googlepay.svg" alt="Google Pay" class="h-6" />
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
