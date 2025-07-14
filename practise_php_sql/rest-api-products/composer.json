@@ -1,0 +1,17 @@
+{
+    "name": "angel/rest-api-products",
+    "autoload": {
+        "psr-4": {
+            "Angel\\RestApiProducts\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "justangelha",
+            "email": "67642840+justangelha@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "nikic/fast-route": "^1.3"
+    }
+}
