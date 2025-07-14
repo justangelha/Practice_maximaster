@@ -17,25 +17,33 @@
 
  Вёрстка (Tailwind + Live Server)
 В терминале ввести:
+```bash
 cd practice_maximaster/shop-site
 npm install
 npm run start
+```
 
 JavaScript (с использованием React + TypeScript)
 В терминале:
+```bash
 cd react-ts-practice/react-ts-practice
 npm install
 npm run dev
+```
 
 PHP-приложения (например, REST API)
 В терминале:
+```bash
 cd practise_php_sql/rest-api-products
 php -S localhost:8000
+```
 
 Docker
 В терминале:
+```bash
 cd docker-projects
 docker-compose up –build
+```
 
 📌 Примечания
 В .gitignore исключены временные файлы и зависимости.
